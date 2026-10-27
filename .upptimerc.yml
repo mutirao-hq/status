@@ -1,0 +1,144 @@
+# Status page de todos os produtos do Mutirão (Upptime): o .upptimerc.yml do repo público
+# mutirao-hq/status. Este arquivo é o ponto de partida (ver README.md ao lado); depois, as entradas
+# de cada produto em `sites` são postas e tiradas pelo `pnpm product:provision` e pelo
+# `product:deprovision`, que as acham pelo `slug` (<slug>-api e <slug>-worker).
+owner: mutirao-hq
+repo: status
+user-agent: mutirao-hq
+
+# Só estes secrets chegam aos workflows do Upptime (o GH_PAT fica de fora da lista de propósito).
+secrets:
+  - NOTIFICATION_TELEGRAM
+  - NOTIFICATION_TELEGRAM_BOT_KEY
+  - NOTIFICATION_TELEGRAM_CHAT_ID
+  - NOTIFICATIONS_DOWN_MESSAGE
+  - NOTIFICATIONS_UP_MESSAGE
+
+# Um produto = duas linhas juntas: o site e a API (readyz, com o banco) e a batida do worker
+# (workerz). 200 é no ar; qualquer outra resposta é fora do ar.
+sites:
+  - name: Mutirão Reference · Site e API
+    slug: reference-api
+    url: https://reference.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: Mutirão Reference · Tarefas em segundo plano
+    slug: reference-worker
+    url: https://reference.mutirao.app/api/workerz
+    maxResponseTime: 10000
+  - name: NestMatch · Site e API
+    slug: nestmatch-api
+    url: https://nestmatch.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: NestMatch · Tarefas em segundo plano
+    slug: nestmatch-worker
+    url: https://nestmatch.mutirao.app/api/workerz
+    maxResponseTime: 10000
+
+# Incidente que se resolve em menos de 15 minutos some do histórico (padrão do Upptime).
+skipDeleteIssues: false
+
+commitMessages:
+  readmeContent: ":pencil: Atualiza o resumo no README [skip ci] [upptime]"
+  summaryJson: ":card_file_box: Atualiza o resumo de status [skip ci] [upptime]"
+  statusChange: "$EMOJI $SITE_NAME: $STATUS ($RESPONSE_CODE em $RESPONSE_TIME ms)
+    [skip ci] [upptime]"
+  graphsUpdate: ":bento: Atualiza os gráficos [skip ci] [upptime]"
+
+status-website:
+  cname: status.mutirao.app
+  name: Status do Mutirão
+  theme: light
+  introTitle: "**Status dos produtos do Mutirão**"
+  introMessage: Conferimos cada produto a cada 5 minutos. Incidentes e manutenções
+    programadas aparecem abaixo.
+  navbar:
+    - title: Status
+      href: /
+
+# O Upptime não traz português: todas as chaves do status-page/i18n.yml, sobrescritas.
+i18n:
+  locale: pt-BR
+  activeIncidents: Incidentes ativos
+  allSystemsOperational: Todos os sistemas funcionando
+  incidentReport: "Relatório do incidente #$NUMBER →"
+  activeIncidentSummary: Aberto em $DATE, com $POSTS atualizações
+  incidentTitle: Detalhes do incidente $NUMBER
+  incidentDetails: Detalhes do incidente
+  incidentFixed: Resolvido
+  incidentOngoing: Em andamento
+  incidentOpenedAt: Aberto em
+  incidentClosedAt: Fechado em
+  incidentViewOnGitHub: Ver e acompanhar no GitHub
+  incidentCommentSummary: Publicado em $DATE por $AUTHOR
+  incidentBack: ← Voltar para todos os incidentes
+  pastIncidents: Incidentes anteriores
+  pastIncidentsResolved: Resolvido em $MINUTES minutos, com $POSTS atualizações
+  liveStatus: Status agora
+  overallUptime: "Disponibilidade geral: $UPTIME"
+  overallUptimeTitle: Disponibilidade geral
+  averageResponseTime: "Tempo médio de resposta: $TIMEms"
+  averageResponseTimeTitle: Tempo médio de resposta
+  # O nome da chave tem erro de digitação no próprio Upptime: fica assim.
+  sevelDayResponseTime: Tempo de resposta (7 dias)
+  responseTimeMs: Tempo de resposta (ms)
+  up: No ar
+  down: Fora do ar
+  degraded: Lento
+  ms: ms
+  loading: Carregando
+  navGitHub: GitHub
+  footer: "Página [de código aberto]($REPO), feita com o
+    [Upptime](https://upptime.js.org)"
+  rateLimitExceededTitle: Limite de acessos atingido
+  rateLimitExceededIntro: Você fez mais acessos do que o permitido em uma hora.
+    Espere um pouco ou adicione um token de acesso pessoal do GitHub.
+  rateLimitExceededWhatDoesErrorMean: O que significa este erro?
+  rateLimitExceededErrorMeaning: Esta página usa a API do GitHub para mostrar o
+    status em tempo real. Sem login, o GitHub permite 60 acessos por hora para
+    cada endereço IP, e você já usou todos.
+  rateLimitExceededErrorHowCanFix: Como resolver?
+  rateLimitExceededErrorFix: Espere uma hora para o limite voltar, ou adicione um
+    token de acesso pessoal do GitHub, que dá mais 5.000 acessos por hora.
+  rateLimitExceededGeneratePAT: Saiba como gerar um token de acesso pessoal
+  rateLimitExceededHasSet: Você tem um token de acesso pessoal configurado.
+  rateLimitExceededRemoveToken: Remover token
+  rateLimitExceededGitHubPAT: Token de acesso pessoal do GitHub
+  rateLimitExceededCopyPastePAT: Copie e cole seu token
+  rateLimitExceededSaveToken: Salvar token
+  errorTitle: Ocorreu um erro
+  errorIntro: Não foi possível carregar o status mais recente.
+  errorText: Tente de novo em alguns instantes.
+  errorHome: Ir para o início
+  pastScheduledMaintenance: Manutenções anteriores
+  scheduledMaintenance: Manutenção programada
+  scheduledMaintenanceSummaryStarted: Começou em $DATE, por $DURATION minutos
+  scheduledMaintenanceSummaryStarts: Começa em $DATE, por $DURATION minutos
+  startedAt: Começou em
+  startsAt: Começa em
+  duration: Duração
+  durationMin: $DURATION minutos
+  incidentCompleted: Concluída
+  incidentScheduled: Programada
+  duration24H: 24h
+  duration7D: 7d
+  duration30D: 30d
+  duration1Y: 1a
+  durationAll: Tudo
+  # Só no README do repo
+  url: URL
+  status: Status
+  history: Histórico
+  responseTime: Tempo de resposta
+  responseTimeDay: Tempo de resposta (24h)
+  responseTimeWeek: Tempo de resposta (7 dias)
+  responseTimeMonth: Tempo de resposta (30 dias)
+  responseTimeYear: Tempo de resposta (1 ano)
+  uptime: Disponibilidade
+  uptimeDay: Disponibilidade (24h)
+  uptimeWeek: Disponibilidade (7 dias)
+  uptimeMonth: Disponibilidade (30 dias)
+  uptimeYear: Disponibilidade (1 ano)
+  responseTimeGraphAlt: Gráfico do tempo de resposta
+  degradedPerformance: Desempenho degradado
+  completeOutage: Todos fora do ar
+  partialOutage: Parte dos sistemas fora do ar
