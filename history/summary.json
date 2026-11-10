@@ -82,19 +82,19 @@
     "url": "https://raven.mutirao.app/api/readyz",
     "icon": "https://icons.duckduckgo.com/ip3/raven.mutirao.app.ico",
     "slug": "raven-api",
-    "status": "down",
-    "uptime": "30.53%",
-    "uptimeDay": "30.53%",
-    "uptimeWeek": "30.53%",
-    "uptimeMonth": "30.53%",
-    "uptimeYear": "30.53%",
+    "status": "up",
+    "uptime": "0.50%",
+    "uptimeDay": "0.50%",
+    "uptimeWeek": "0.50%",
+    "uptimeMonth": "0.50%",
+    "uptimeYear": "0.50%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-10": 1
+      "2026-11-10": 85
     }
   },
   {
@@ -102,19 +102,19 @@
     "url": "https://raven.mutirao.app/api/workerz",
     "icon": "https://icons.duckduckgo.com/ip3/raven.mutirao.app.ico",
     "slug": "raven-worker",
-    "status": "down",
-    "uptime": "44.42%",
-    "uptimeDay": "44.42%",
-    "uptimeWeek": "44.42%",
-    "uptimeMonth": "44.42%",
-    "uptimeYear": "44.42%",
+    "status": "up",
+    "uptime": "0.43%",
+    "uptimeDay": "0.43%",
+    "uptimeWeek": "0.43%",
+    "uptimeMonth": "0.43%",
+    "uptimeYear": "0.43%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-11-10": 0
+      "2026-11-10": 85
     }
   }
 ]
