@@ -23,11 +23,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/reference.mutirao.app.ico",
     "slug": "reference-worker",
     "status": "up",
-    "uptime": "98.96%",
+    "uptime": "99.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "98.96%",
-    "uptimeYear": "98.96%",
+    "uptimeMonth": "99.00%",
+    "uptimeYear": "99.00%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -62,11 +62,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/nestmatch.mutirao.app.ico",
     "slug": "nestmatch-worker",
     "status": "up",
-    "uptime": "98.96%",
+    "uptime": "99.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "98.96%",
-    "uptimeYear": "98.96%",
+    "uptimeMonth": "99.00%",
+    "uptimeYear": "99.00%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -75,6 +75,46 @@
     "dailyMinutesDown": {
       "2026-10-28": 1,
       "2026-10-27": 199
+    }
+  },
+  {
+    "name": "Raven · Site e API",
+    "url": "https://raven.mutirao.app/api/readyz",
+    "icon": "https://icons.duckduckgo.com/ip3/raven.mutirao.app.ico",
+    "slug": "raven-api",
+    "status": "down",
+    "uptime": "36.63%",
+    "uptimeDay": "36.63%",
+    "uptimeWeek": "36.63%",
+    "uptimeMonth": "36.63%",
+    "uptimeYear": "36.63%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-11-10": 0
+    }
+  },
+  {
+    "name": "Raven · Tarefas em segundo plano",
+    "url": "https://raven.mutirao.app/api/workerz",
+    "icon": "https://icons.duckduckgo.com/ip3/raven.mutirao.app.ico",
+    "slug": "raven-worker",
+    "status": "down",
+    "uptime": "61.04%",
+    "uptimeDay": "61.04%",
+    "uptimeWeek": "61.04%",
+    "uptimeMonth": "61.04%",
+    "uptimeYear": "61.04%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2026-11-10": 0
     }
   }
 ]
