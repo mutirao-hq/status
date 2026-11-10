@@ -33,6 +33,14 @@ sites:
     slug: nestmatch-worker
     url: https://nestmatch.mutirao.app/api/workerz
     maxResponseTime: 10000
+  - name: Raven · Site e API
+    slug: raven-api
+    url: https://raven.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: Raven · Tarefas em segundo plano
+    slug: raven-worker
+    url: https://raven.mutirao.app/api/workerz
+    maxResponseTime: 10000
 
 # Incidente que se resolve em menos de 15 minutos some do histórico (padrão do Upptime).
 skipDeleteIssues: false
