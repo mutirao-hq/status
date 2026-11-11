@@ -57,6 +57,14 @@ sites:
     slug: refaturado-worker
     url: https://refaturado.mutirao.app/api/workerz
     maxResponseTime: 10000
+  - name: Comprador · Site e API
+    slug: comprador-api
+    url: https://comprador.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: Comprador · Tarefas em segundo plano
+    slug: comprador-worker
+    url: https://comprador.mutirao.app/api/workerz
+    maxResponseTime: 10000
 
 # Incidente que se resolve em menos de 15 minutos some do histórico (padrão do Upptime).
 skipDeleteIssues: false
