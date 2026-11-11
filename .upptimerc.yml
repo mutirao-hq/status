@@ -41,6 +41,14 @@ sites:
     slug: raven-worker
     url: https://raven.mutirao.app/api/workerz
     maxResponseTime: 10000
+  - name: Contábil · Site e API
+    slug: contabil-api
+    url: https://contabil.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: Contábil · Tarefas em segundo plano
+    slug: contabil-worker
+    url: https://contabil.mutirao.app/api/workerz
+    maxResponseTime: 10000
 
 # Incidente que se resolve em menos de 15 minutos some do histórico (padrão do Upptime).
 skipDeleteIssues: false
