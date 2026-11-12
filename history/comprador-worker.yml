@@ -1,7 +1,7 @@
 url: https://comprador.mutirao.app/api/workerz
-status: down
-code: 502
-responseTime: 244
-lastUpdated: 2026-11-11T23:27:12.628Z
+status: up
+code: 200
+responseTime: 268
+lastUpdated: 2026-11-12T02:29:34.641Z
 startTime: 2026-11-11T23:26:59.636Z
 generator: Upptime <https://github.com/upptime/upptime>
