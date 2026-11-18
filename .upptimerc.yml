@@ -65,6 +65,14 @@ sites:
     slug: comprador-worker
     url: https://comprador.mutirao.app/api/workerz
     maxResponseTime: 10000
+  - name: Diálogo Diário · Site e API
+    slug: dialogo-diario-api
+    url: https://dialogo-diario.mutirao.app/api/readyz
+    maxResponseTime: 10000
+  - name: Diálogo Diário · Tarefas em segundo plano
+    slug: dialogo-diario-worker
+    url: https://dialogo-diario.mutirao.app/api/workerz
+    maxResponseTime: 10000
 
 # Incidente que se resolve em menos de 15 minutos some do histórico (padrão do Upptime).
 skipDeleteIssues: false
