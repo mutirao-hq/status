@@ -1,7 +1,7 @@
 url: https://dialogo-diario.mutirao.app/api/workerz
-status: down
-code: 502
-responseTime: 260
-lastUpdated: 2026-11-18T16:10:51.567Z
+status: up
+code: 200
+responseTime: 246
+lastUpdated: 2026-11-18T22:43:41.333Z
 startTime: 2026-11-18T16:10:38.548Z
 generator: Upptime <https://github.com/upptime/upptime>
