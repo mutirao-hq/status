@@ -1,7 +1,7 @@
 url: https://dialogo-diario.mutirao.app/api/readyz
-status: down
-code: 502
-responseTime: 526
-lastUpdated: 2026-11-18T16:10:35.245Z
+status: up
+code: 200
+responseTime: 575
+lastUpdated: 2026-11-18T22:43:37.267Z
 startTime: 2026-11-18T16:10:21.523Z
 generator: Upptime <https://github.com/upptime/upptime>
